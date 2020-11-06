@@ -1,0 +1,7 @@
+FROM najlabioinfo/celegans
+LABEL authors="Najlabioinfo <bhndevtools@gmail.com>" \
+      description="Docker image containing all requirements for nf-core/celegans pipeline"
+
+COPY environment.yml /
+RUN conda env create -f /environment.yml && conda clean -a
+ENV PATH /opt/conda/envs/-najlabioinfo-celegans-latest/bin:$PATH

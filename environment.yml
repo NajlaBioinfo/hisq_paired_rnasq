@@ -1,0 +1,16 @@
+# You can use this file to create a conda environment for this pipeline:
+#   conda env create -f environment.yml
+name: najlabioinfo/celegans:latest
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+ ## conda-forge packages
+  - conda-forge::multiqc=1.9
+
+ ## bioconda packages
+  - cutadapt=1.18
+  - fastqc=0.11.9
+
