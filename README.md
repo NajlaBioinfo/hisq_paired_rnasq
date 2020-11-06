@@ -24,7 +24,7 @@ Clone Github Repository
 -----------------------
 ```
 $ git clone https://github.com/Najlabioinfo/hisq_paired_rnasq.git
-$ cd celegans_nfl
+$ cd hisq_paired_rnasq
 ```
 
 Pull Docker Image
